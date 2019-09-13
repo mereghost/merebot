@@ -17,6 +17,7 @@ GEM
     domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
     dotenv (2.7.4)
+    edits (0.2.2)
     event_emitter (0.2.6)
     faraday (0.15.4)
       multipart-post (>= 1.2, < 3)
@@ -128,6 +129,7 @@ PLATFORMS
 DEPENDENCIES
   discordrb
   dotenv
+  edits
   faraday
   guard
   guard-bundler
