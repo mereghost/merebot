@@ -24,6 +24,6 @@ guard :bundler do
   files.each { |file| watch(helper.real_path(file)) }
 end
 
-guard :rubocop, cli: '-a -D' do
+guard :rubocop, cli: '-a -D -c .rubocop.yml' do
   watch(/.+\.rb$/)
 end

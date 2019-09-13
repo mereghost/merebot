@@ -3,6 +3,9 @@
 source 'https://rubygems.org'
 
 gem 'discordrb'
+gem 'dotenv'
+gem 'faraday'
+gem 'oj'
 
 group :test do
   gem 'guard'
@@ -12,4 +15,5 @@ group :test do
   gem 'rspec'
   gem 'rubocop'
   gem 'simplecov'
+  gem 'vcr'
 end
