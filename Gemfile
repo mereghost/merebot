@@ -4,9 +4,9 @@ source 'https://rubygems.org'
 
 gem 'discordrb'
 gem 'dotenv'
+gem 'edits'
 gem 'faraday'
 gem 'oj'
-gem 'edits'
 
 group :test do
   gem 'guard'

@@ -11,6 +11,6 @@ RSpec.describe Merebot::Discord do
   subject(:discord) { described_class.new(server) }
 
   it '#members return a list of discord users' do
-    expect(discord.members).to all(be_a(Merebot::Discord::User))
+    expect(discord.members).to all(be_a(Merebot::Discord::Member))
   end
 end
