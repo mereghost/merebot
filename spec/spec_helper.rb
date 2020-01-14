@@ -1,6 +1,10 @@
 # frozen_string_literal: true
 
 require 'vcr'
+require 'simplecov'
+require 'dotenv'
+
+Dotenv.load
 
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|
@@ -27,4 +31,5 @@ VCR.configure do |config|
   config.hook_into :faraday
 end
 
+SimpleCov.start { enable_coverage :branch }
 require_relative '../merebot'

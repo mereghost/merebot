@@ -5,10 +5,13 @@ source 'https://rubygems.org'
 ruby '2.7.0'
 
 gem 'discordrb'
-gem 'dotenv'
 gem 'edits'
 gem 'faraday'
 gem 'oj'
+
+group :development, :test do
+  gem 'dotenv'
+end
 
 group :test do
   gem 'guard'

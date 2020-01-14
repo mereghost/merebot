@@ -10,9 +10,10 @@ module Merebot
       end
 
       def call
-        return Oj.load(response.body, symbol_keys: true) if response.success?
+        raise Merebot::NetworkError, 'GW2 API returned an error' unless response.success?
 
-        raise Merebot::NetworkError, 'GW2 API returned an error'
+        member_list = Oj.load(response.body, symbol_keys: true)
+        member_list.map { |member| User.new(member) }
       end
 
       private
