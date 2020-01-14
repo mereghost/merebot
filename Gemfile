@@ -2,6 +2,8 @@
 
 source 'https://rubygems.org'
 
+ruby '2.7.0'
+
 gem 'discordrb'
 gem 'dotenv'
 gem 'edits'
@@ -15,6 +17,6 @@ group :test do
   gem 'guard-rubocop'
   gem 'rspec'
   gem 'rubocop'
-  gem 'simplecov'
+  gem 'simplecov', '0.18.0.beta1'
   gem 'vcr'
 end
