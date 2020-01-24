@@ -2,7 +2,7 @@
 
 source 'https://rubygems.org'
 
-ruby '2.7.0'
+#ruby '2.7.0'
 
 gem 'discordrb'
 gem 'edits'
@@ -20,6 +20,6 @@ group :test do
   gem 'guard-rubocop'
   gem 'rspec'
   gem 'rubocop'
-  gem 'simplecov', '0.18.0.beta1'
+  gem 'simplecov', '0.18.0'
   gem 'vcr'
 end
